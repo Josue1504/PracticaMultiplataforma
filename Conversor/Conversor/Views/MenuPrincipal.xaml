@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Conversor.Views.MenuPrincipal"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout BackgroundColor="Aquamarine">
+        <Label Text="Conversor de unidades"
+               FontSize="30"
+               TextColor="Black"
+               FontAttributes="Bold"
+               Margin="0,20,0,0"
+               HorizontalOptions="Center" />
+        <Frame VerticalOptions="FillAndExpand"
+               Margin="40"
+               CornerRadius="20"
+               HasShadow="False">
+            <StackLayout VerticalOptions="Center"
+                         Spacing="20">
+                <Image Source="https://ovacen.com/wp-content/uploads/2024/12/calculador-conversor-entre-unidades-superficie-area.jpg" />
+                <Label Text="(Cm) a (Mt)"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       FontSize="40"
+                       HorizontalOptions="Center" />
+                <Button Text="Iniciar"
+                        BackgroundColor="#FDE080"
+                        CornerRadius="10"
+                        FontSize="Medium"
+                        FontAttributes="Bold" 
+                        x:Name="Btn_Iniciar"
+                        Clicked="Btn_Iniciar_Clicked"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>

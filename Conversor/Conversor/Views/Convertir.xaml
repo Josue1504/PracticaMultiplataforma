@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Conversor.Views.Convertir"
+             NavigationPage.HasNavigationBar="False"
+             Visual="Material">
+    <Grid BackgroundColor="#FDE07F">
+        <StackLayout VerticalOptions="Center"
+                     Margin="20"
+                     >
+            <Image Source="https://i.ibb.co/hFBK3y2f/matematicas.png" 
+                   Margin="20"/>
+            <Frame HasShadow="False"
+                   CornerRadius="20">
+                <Entry Keyboard="Numeric" 
+                       Placeholder="Ingrese la cantidad a convertir en Cm"
+                       TextColor="Black"
+                       BackgroundColor="White"
+                       PlaceholderColor="Black"
+                       FontSize="Large"
+                       x:Name="Txt_Cm"/>
+            </Frame>
+            <Button Text="Calcular"
+                    FontSize="Large"
+                    CornerRadius="10"
+                    FontAttributes="Bold"
+                    Margin="0,20,0,0"
+                    TextTransform="None"
+                    BackgroundColor="ForestGreen"
+                    x:Name="Btn_Calcular"
+                    Clicked="Btn_Calcular_Clicked"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Resultado"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"/>
+                <Label Text="0.00"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" 
+                       x:Name="Lbl_resultado"/>
+            </StackLayout>
+            <Button Text="Volver"
+                    TextTransform="None"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    CornerRadius="10"
+                    x:Name="Btn_volver"
+                    Clicked="Btn_volver_Clicked"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
